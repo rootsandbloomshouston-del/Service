@@ -1,0 +1,224 @@
+{
+  "project": "Service",
+  "archive_count": 6,
+  "archives": [
+    {
+      "archive_name": "service-app-phase2.zip",
+      "phase": 2,
+      "total_files": 41,
+      "top_level_dirs": [
+        "service-app-scaffold"
+      ],
+      "extension_counts": {
+        ".ts": 23,
+        ".tsx": 9,
+        ".json": 4,
+        ".css": 1,
+        ".js": 1,
+        ".html": 1,
+        ".example": 1,
+        ".md": 1
+      },
+      "key_files": [
+        "service-app-scaffold/client/src/lib/api.ts",
+        "service-app-scaffold/package.json",
+        "service-app-scaffold/README.md",
+        "service-app-scaffold/tailwind.config.ts",
+        "service-app-scaffold/tsconfig.client.json",
+        "service-app-scaffold/tsconfig.json",
+        "service-app-scaffold/tsconfig.server.json",
+        "service-app-scaffold/vite.config.ts",
+        "service-app-scaffold/client/src/App.tsx",
+        "service-app-scaffold/client/src/index.css",
+        "service-app-scaffold/client/src/main.tsx",
+        "service-app-scaffold/server/src/app.ts",
+        "service-app-scaffold/server/src/index.ts",
+        "service-app-scaffold/client/src/components/Layout.tsx",
+        "service-app-scaffold/client/src/components/RoleSwitcher.tsx",
+        "service-app-scaffold/client/src/pages/CustomersPage.tsx",
+        "service-app-scaffold/client/src/pages/DashboardPage.tsx",
+        "service-app-scaffold/client/src/pages/JobsPage.tsx",
+        "service-app-scaffold/client/src/pages/PortalQuotePage.tsx",
+        "service-app-scaffold/client/src/pages/QuotesPage.tsx"
+      ]
+    },
+    {
+      "archive_name": "service-app-phase3.zip",
+      "phase": 3,
+      "total_files": 49,
+      "top_level_dirs": [
+        "service-app-scaffold"
+      ],
+      "extension_counts": {
+        ".ts": 28,
+        ".tsx": 12,
+        ".json": 4,
+        ".css": 1,
+        ".js": 1,
+        ".html": 1,
+        ".example": 1,
+        ".md": 1
+      },
+      "key_files": [
+        "service-app-scaffold/client/src/lib/api.ts",
+        "service-app-scaffold/package.json",
+        "service-app-scaffold/README.md",
+        "service-app-scaffold/tailwind.config.ts",
+        "service-app-scaffold/tsconfig.client.json",
+        "service-app-scaffold/tsconfig.json",
+        "service-app-scaffold/tsconfig.server.json",
+        "service-app-scaffold/vite.config.ts",
+        "service-app-scaffold/client/src/App.tsx",
+        "service-app-scaffold/client/src/index.css",
+        "service-app-scaffold/client/src/main.tsx",
+        "service-app-scaffold/server/src/app.ts",
+        "service-app-scaffold/server/src/index.ts",
+        "service-app-scaffold/client/src/components/Layout.tsx",
+        "service-app-scaffold/client/src/components/ProtectedRoute.tsx",
+        "service-app-scaffold/client/src/components/RoleSwitcher.tsx",
+        "service-app-scaffold/client/src/context/AuthContext.tsx",
+        "service-app-scaffold/client/src/pages/CustomersPage.tsx",
+        "service-app-scaffold/client/src/pages/DashboardPage.tsx",
+        "service-app-scaffold/client/src/pages/JobsPage.tsx"
+      ]
+    },
+    {
+      "archive_name": "service-app-phase4.zip",
+      "phase": 4,
+      "total_files": 52,
+      "top_level_dirs": [
+        "service-app-scaffold"
+      ],
+      "extension_counts": {
+        ".ts": 31,
+        ".tsx": 12,
+        ".json": 4,
+        ".css": 1,
+        ".js": 1,
+        ".html": 1,
+        ".example": 1,
+        ".md": 1
+      },
+      "key_files": [
+        "service-app-scaffold/client/src/lib/api.ts",
+        "service-app-scaffold/package.json",
+        "service-app-scaffold/README.md",
+        "service-app-scaffold/tailwind.config.ts",
+        "service-app-scaffold/tsconfig.client.json",
+        "service-app-scaffold/tsconfig.json",
+        "service-app-scaffold/tsconfig.server.json",
+        "service-app-scaffold/vite.config.ts",
+        "service-app-scaffold/client/src/App.tsx",
+        "service-app-scaffold/client/src/index.css",
+        "service-app-scaffold/client/src/main.tsx",
+        "service-app-scaffold/server/src/app.ts",
+        "service-app-scaffold/server/src/index.ts",
+        "service-app-scaffold/client/src/components/Layout.tsx",
+        "service-app-scaffold/client/src/components/ProtectedRoute.tsx",
+        "service-app-scaffold/client/src/components/RoleSwitcher.tsx",
+        "service-app-scaffold/client/src/context/AuthContext.tsx",
+        "service-app-scaffold/client/src/pages/CustomersPage.tsx",
+        "service-app-scaffold/client/src/pages/DashboardPage.tsx",
+        "service-app-scaffold/client/src/pages/JobsPage.tsx"
+      ]
+    },
+    {
+      "archive_name": "service-app-phase5.zip",
+      "phase": 5,
+      "total_files": 57,
+      "top_level_dirs": [
+        "service-app-phase5"
+      ],
+      "extension_counts": {
+        ".ts": 34,
+        ".tsx": 14,
+        ".json": 4,
+        ".css": 1,
+        ".js": 1,
+        ".html": 1,
+        ".example": 1,
+        ".md": 1
+      },
+      "key_files": [
+        "service-app-phase5/client/src/lib/api.ts",
+        "service-app-phase5/package.json",
+        "service-app-phase5/README.md",
+        "service-app-phase5/tailwind.config.ts",
+        "service-app-phase5/tsconfig.client.json",
+        "service-app-phase5/tsconfig.json",
+        "service-app-phase5/tsconfig.server.json",
+        "service-app-phase5/vite.config.ts",
+        "service-app-phase5/client/src/App.tsx",
+        "service-app-phase5/client/src/index.css",
+        "service-app-phase5/client/src/main.tsx",
+        "service-app-phase5/server/src/app.ts",
+        "service-app-phase5/server/src/index.ts",
+        "service-app-phase5/client/src/components/Layout.tsx",
+        "service-app-phase5/client/src/components/ProtectedRoute.tsx",
+        "service-app-phase5/client/src/components/RoleSwitcher.tsx",
+        "service-app-phase5/client/src/context/AuthContext.tsx",
+        "service-app-phase5/client/src/pages/CustomersPage.tsx",
+        "service-app-phase5/client/src/pages/DashboardPage.tsx",
+        "service-app-phase5/client/src/pages/InvoicesPage.tsx"
+      ]
+    },
+    {
+      "archive_name": "service-app-phase6 (1).zip",
+      "phase": 6,
+      "total_files": 3,
+      "top_level_dirs": [
+        "server",
+        "README.md"
+      ],
+      "extension_counts": {
+        ".ts": 2,
+        ".md": 1
+      },
+      "key_files": [
+        "README.md",
+        "server/src/routes/calendar.ts",
+        "server/src/routes/stripeWebhook.ts"
+      ]
+    },
+    {
+      "archive_name": "service-app-scaffold.zip",
+      "phase": null,
+      "total_files": 34,
+      "top_level_dirs": [
+        "service-app-scaffold"
+      ],
+      "extension_counts": {
+        ".ts": 18,
+        ".tsx": 7,
+        ".json": 4,
+        ".css": 1,
+        ".js": 1,
+        ".html": 1,
+        ".example": 1,
+        ".md": 1
+      },
+      "key_files": [
+        "service-app-scaffold/client/src/lib/api.ts",
+        "service-app-scaffold/package.json",
+        "service-app-scaffold/README.md",
+        "service-app-scaffold/tailwind.config.ts",
+        "service-app-scaffold/tsconfig.client.json",
+        "service-app-scaffold/tsconfig.json",
+        "service-app-scaffold/tsconfig.server.json",
+        "service-app-scaffold/vite.config.ts",
+        "service-app-scaffold/client/src/App.tsx",
+        "service-app-scaffold/client/src/index.css",
+        "service-app-scaffold/client/src/main.tsx",
+        "service-app-scaffold/server/src/app.ts",
+        "service-app-scaffold/server/src/index.ts",
+        "service-app-scaffold/client/src/components/Layout.tsx",
+        "service-app-scaffold/client/src/pages/CustomersPage.tsx",
+        "service-app-scaffold/client/src/pages/DashboardPage.tsx",
+        "service-app-scaffold/client/src/pages/JobsPage.tsx",
+        "service-app-scaffold/client/src/pages/QuotesPage.tsx",
+        "service-app-scaffold/server/src/db/client.ts",
+        "service-app-scaffold/server/src/db/schema.ts"
+      ]
+    }
+  ]
+}
