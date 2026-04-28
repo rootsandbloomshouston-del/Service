@@ -40,7 +40,7 @@ def infer_phase(path: Path) -> int | None:
 
 def list_archives(root: Path) -> list[ArchiveInfo]:
     infos = [ArchiveInfo(path=p, phase=infer_phase(p)) for p in root.glob("*.zip")]
-    return sorted(infos, key=lambda a: (a.phase is None, a.phase or -1, a.path.name.lower()))
+    return sorted(infos, key=lambda a: (a.phase is not None, a.phase or -1, a.path.name.lower()))
 
 
 def safe_rel(path: str) -> Path | None:
@@ -56,6 +56,20 @@ def hash_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def strip_single_root_folder(paths: list[Path]) -> list[Path]:
+    """Remove a single common top-level directory from all paths when present."""
+    if not paths:
+        return paths
+    if any(len(path.parts) < 2 for path in paths):
+        return paths
+
+    first_segment = paths[0].parts[0]
+    if any(path.parts[0] != first_segment for path in paths):
+        return paths
+
+    return [Path(*path.parts[1:]) for path in paths]
+
+
 def prepare_dirs(base: Path, clean: bool) -> tuple[Path, Path, Path]:
     phases_dir = base / "phases"
     merged_dir = base / "merged"
@@ -68,7 +82,7 @@ def prepare_dirs(base: Path, clean: bool) -> tuple[Path, Path, Path]:
 
 
 def extract_archive(archive: ArchiveInfo, target_dir: Path) -> list[Path]:
-    extracted: list[Path] = []
+    extracted: list[tuple[Path, bytes]] = []
     with ZipFile(archive.path) as zf:
         for name in zf.namelist():
             if name.endswith("/"):
@@ -76,11 +90,16 @@ def extract_archive(archive: ArchiveInfo, target_dir: Path) -> list[Path]:
             rel = safe_rel(name)
             if rel is None:
                 continue
-            out_path = target_dir / rel
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            out_path.write_bytes(zf.read(name))
-            extracted.append(rel)
-    return extracted
+            extracted.append((rel, zf.read(name)))
+
+    normalized_paths = strip_single_root_folder([rel for rel, _ in extracted])
+    output_paths: list[Path] = []
+    for normalized_rel, (_, payload) in zip(normalized_paths, extracted):
+        out_path = target_dir / normalized_rel
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_bytes(payload)
+        output_paths.append(normalized_rel)
+    return output_paths
 
 
 def overlay_phase(
